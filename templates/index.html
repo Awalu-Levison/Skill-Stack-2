@@ -1,14 +1,14 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-mpatible" content="ie=edge">
-	<link rel="stylesheet">
-	<title>Skill Stack</title>
-</head>
+{% extends "base.html" %}
+{% block title%}Home page{% endblock %}
 
-<body>
-	<p>The main index file</p>
-</body>
-</html>
+{% block content %}
+
+<h1>Hello World!</h1>
+
+<form method="POST" action="{{ url_for('index') }}">
+	<input type="text" name="username" placeholder="username"><br>
+	<input type="password" name="password" placeholder="password"><br>
+	<input type="submit" value="Login">
+</form>
+
+{% endblock content %}
