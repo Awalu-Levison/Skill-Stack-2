@@ -1,17 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-mpatible" content="ie=edge">
-	<link rel="stylesheet">
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
 	<title>{% block title %}Skill Stack{% endblock %}</title>
 </head>
 
 <body>
+	<header class="site-header">
+		<nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
+			<div class="container">
+				<div class="collapse navbar-collapse" id="navbarToggle">
+					<div class="navbar-nav mr-auto">
+						<a class="nav-item nav-link" href="{{ url_for('home') }}">Home</a>
+						<a class="nav-item nav-link" href="{{ url_for('course') }}">Courses</a>
+						<a class="nav-item nav-link" href="{{ url_for('contact') }}">Contact Us</a>
+						<a class="nav-item nav-link" href="{{ url_for('about') }}">About</a>
+					</div>
 
-	<p>Basic info goes here</p>
+					<!-- Navbar Right Side -->
+					 <div class="navbar-nav">
+						<a class="nav-item nav-link" href="{{ url_for('login') }}">Login</a>
+						<a class="nav-item nav-link" href="{{ url_for('register') }}">Register</a>
+					 </div>
+				</div>
+			</div>
+		</nav>
+	</header>		
+	
 	{% block content %}{% endblock %}
+
 
 </body>
 </html>
