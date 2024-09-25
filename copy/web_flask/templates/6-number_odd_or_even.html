@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Dashboard</title>
+  <link rel="stylesheet" href="../static/styles/style.css">
+</head>
+<body>
+    <H1>Number: {{ n }} is {{ evenness }}</H1>
+  <div class="dashboard">
+    <div class="sidebar">
+      <h2>My Portfolio</h2>
+      <ul>
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="main-content">
+      <header>
+        <h1>Welcome to My Portfolio</h1>
+        <p>Explore my latest work and projects.</p>
+      </header>
+
+      <section class="content">
+        <h2>Featured Projects</h2>
+        <div class="project-grid">
+          <div class="project-card">
+            <h3>Project 1</h3>
+            <p>Add Security on kubernetes with NETWORK POLICY.</p>
+            <a href="#">View Project</a>
+          </div>
+          <div class="project-card">
+            <h3>Project 2</h3>
+            <p>Deploy Karpenter on EKS to improve scale's solution .</p>
+            <a href="#">View Project</a>
+          </div>
+          <div class="project-card">
+            <h3>Project 3</h3>
+            <p>Improve monitoring of eks and aws compoments with prometheus.</p>
+            <a href="#">View Project</a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</body>
+</html>

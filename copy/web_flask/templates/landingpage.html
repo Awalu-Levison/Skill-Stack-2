@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DevOps Portfolio - [Votre Nom]</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* Header */
+        header {
+            background-color: #282c34;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('hero-image.jpg') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin: 0;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin: 10px 0 30px;
+        }
+
+        .hero .cta {
+            background-color: #ff6b6b;
+            padding: 10px 25px;
+            color: white;
+            text-transform: uppercase;
+            font-weight: bold;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        /* About Section */
+        .about {
+            padding: 60px 20px;
+            text-align: center;
+            background-color: white;
+        }
+
+        .about h2 {
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        /* Projects Section */
+        .projects {
+            background-color: #282c34;
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .projects h2 {
+            margin-bottom: 40px;
+        }
+
+        .project-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .project-item {
+            width: 300px;
+            margin: 15px;
+            padding: 20px;
+            background-color: #333;
+            border-radius: 10px;
+        }
+
+        .project-item h3 {
+            margin-bottom: 10px;
+        }
+
+        /* Skills Section */
+        .skills {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .skills h2 {
+            margin-bottom: 30px;
+        }
+
+        .skills-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .skill-item {
+            margin: 10px;
+            padding: 15px 20px;
+            background-color: #f4f4f4;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Lionel Dakyam and Levison Awalun project </h1>
+        <h1>it's landinng page about porfolio project </h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projets</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>We are DEV and DevOps Engineer</h1>
+        <p> DEV build application and DEVOPS deploy it with Automation solution, CI/CD, Cloud</p>
+        <a href="#projects" class="cta">See our works </a>
+    </section>
+
+    <!-- About Me -->
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>Ingénieur DevOps avec une expertise dans l'automatisation, le déploiement de solutions dans le cloud, et l'intégration continue. Je travaille avec des outils comme Docker, Kubernetes, Terraform, et bien d'autres.</p>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="projects">
+        <h2>Mes projets</h2>
+        <div class="project-list">
+            <div class="project-item">
+                <h3>Projet 1 : CI/CD Pipeline</h3>
+                <p>Mise en place d'un pipeline CI/CD complet avec Jenkins, Docker, et Kubernetes pour une application microservices.</p>
+            </div>
+            <div class="project-item">
+                <h3>Projet 2 : Infrastructure as Code</h3>
+                <p>Déploiement automatisé d'infrastructures AWS avec Terraform pour des environnements de production résilients.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="skills">
+        <h2>Compétences techniques</h2>
+        <div class="skills-list">
+            <div class="skill-item">Docker</div>
+            <div class="skill-item">Kubernetes</div>
+            <div class="skill-item">Terraform</div>
+            <div class="skill-item">AWS</div>
+            <div class="skill-item">CI/CD</div>
+            <div class="skill-item">GitLab CI</div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <p>Contactez-moi sur <a href="https://www.linkedin.com" style="color: #ff6b6b;">LinkedIn</a> ou via mon <a href="https://github.com" style="color: #ff6b6b;">GitHub</a></p>
+    </footer>
+</body>
+</html>
